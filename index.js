@@ -19,7 +19,7 @@ const getCategoryName = (category) => {
 	return '';
 }
 
-const app = fastify();
+const app = fastify({logger: true});
 
 const getFeed = async ({path, category, format, reply}) => {
 	const db = await mongo();
