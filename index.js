@@ -86,15 +86,15 @@ app.get('/all.rss', (request, reply) => getFeed({path: '/all.rss', category: nul
 app.get('/all.json', (request, reply) => getFeed({path: '/all.json', category: null, format: 'json', reply}));
 app.get('/cg.atom', (request, reply) => getFeed({path: '/cg.atom', category: 'cg', format: 'atom', reply}));
 app.get('/cg.rss', (request, reply) => getFeed({path: '/cg.rss', category: 'cg', format: 'rss', reply}));
-app.get('/cg.json', (request, reply) => getFeed({path: '/cg.rss', category: 'cg', format: 'json', reply}));
+app.get('/cg.json', (request, reply) => getFeed({path: '/cg.json', category: 'cg', format: 'json', reply}));
 app.get('/cg-wide.atom', (request, reply) => getFeed({path: '/cg-wide.atom', category: 'cg-wide', format: 'atom', reply}));
 app.get('/cg-wide.rss', (request, reply) => getFeed({path: '/cg-wide.rss', category: 'cg-wide', format: 'rss', reply}));
-app.get('/cg-wide.json', (request, reply) => getFeed({path: '/cg-wide.rss', category: 'cg-wide', format: 'json', reply}));
+app.get('/cg-wide.json', (request, reply) => getFeed({path: '/cg-wide.json', category: 'cg-wide', format: 'json', reply}));
 app.get('/ml.atom', (request, reply) => getFeed({path: '/ml.atom', category: 'ml', format: 'atom', reply}));
 app.get('/ml.rss', (request, reply) => getFeed({path: '/ml.rss', category: 'ml', format: 'rss', reply}));
-app.get('/ml.json', (request, reply) => getFeed({path: '/ml.rss', category: 'ml', format: 'json', reply}));
+app.get('/ml.json', (request, reply) => getFeed({path: '/ml.json', category: 'ml', format: 'json', reply}));
 app.get('/sc.atom', (request, reply) => getFeed({path: '/sc.atom', category: 'sc', format: 'atom', reply}));
 app.get('/sc.rss', (request, reply) => getFeed({path: '/sc.rss', category: 'sc', format: 'rss', reply}));
-app.get('/sc.json', (request, reply) => getFeed({path: '/sc.rss', category: 'sc', format: 'json', reply}));
+app.get('/sc.json', (request, reply) => getFeed({path: '/sc.json', category: 'sc', format: 'json', reply}));
 
 app.listen(process.env.PORT || 3000, '0.0.0.0');
