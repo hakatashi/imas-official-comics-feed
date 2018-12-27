@@ -26,7 +26,7 @@ const getFeed = async ({path, category, format, reply}) => {
 	const db = await mongo();
 	const lastUpdateDocuments = await db.find().sort({updatedAt: -1}).limit(1).toArray();
 	const lastUpdate = get(lastUpdateDocuments, [0, 'updatedAt']);
-	if (!lastUpdate || lastUpdate < Date.now() - 10 * 60 * 1000) {
+	if (!lastUpdate || lastUpdate < Date.now() - 5 * 60 * 1000) {
 		await scrapers();
 	}
 
