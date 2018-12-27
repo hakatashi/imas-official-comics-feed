@@ -24,7 +24,7 @@ const app = fastify({logger: true});
 const getFeed = async ({path, category, format, reply}) => {
 	const db = await mongo();
 	const lastUpdateDocuments = await db.find().sort({updatedAt: -1}).limit(1).toArray();
-	const lastUpdate = lastUpdateDocuments[0].updatedAt;
+	const lastUpdate = lastUpdateDocuments && lastUpdateDocuments[0].updatedAt;
 	if (!lastUpdate || lastUpdate < Date.now() - 10 * 60 * 1000) {
 		await scrapers();
 	}
