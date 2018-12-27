@@ -1,0 +1,28 @@
+{
+  "name": "imas-official-comics-feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakatashi/imas-official-comics-feed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakatashi/imas-official-comics-feed/issues"
+  },
+  "homepage": "https://github.com/hakatashi/imas-official-comics-feed#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "fastify": "^1.13.3",
+    "feed": "^2.0.2",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.10",
+    "twit": "^2.2.11"
+  }
+}
