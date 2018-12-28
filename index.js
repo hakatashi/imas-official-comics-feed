@@ -58,7 +58,7 @@ const getFeed = async ({path, category, format, reply}) => {
 			id: entry.link,
 			link: entry.link,
 			description: '',
-			content: entry.images.map((image) => `<p><img src="${image}"></p>`).join(''),
+			content: entry.images.map((image) => `<figure><img src="${image}"><figcaption><a href="${image}">${image}</a></fagcaption></figure>`).join(''),
 			date: new Date(entry.date),
 			image: entry.images[0],
 		});
