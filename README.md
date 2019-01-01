@@ -1,4 +1,4 @@
-# imas-official-comics-feed [![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Rss-feed.svg/32px-Rss-feed.svg.png)][https://imas-official-comics-feed.herokuapp.com/]
+# imas-official-comics-feed [![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Rss-feed.svg/32px-Rss-feed.svg.png)](https://imas-official-comics-feed.herokuapp.com/)
 
 アイドルマスターシリーズの公式マンガ (4コマなど) の更新情報を垂れ流すAtomフィードです。
 
